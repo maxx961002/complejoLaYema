@@ -17,42 +17,8 @@
 
 body {
     font-family: "Delius Swash Caps", cursive;
-    background-color: #FAF3E0; 
+    background-color: #F3EAD2; 
     color: #000000;
-}
-
-/* 🎨 PALETA DE COLORES */
-:root {
-    --color-fondo: #FAF3E0; /* Crema */
-    --color-secciones: #76C7C0; /* Azul agua */
-    --color-boton: #D1A054; /* Dorado suave */
-    --color-texto: #2B1A06; /* Marrón oscuro para títulos */
-    --color-texto-secundario: #4A4A4A; /* Gris oscuro para párrafos */
-}
-
-/* Fondo general de la página */
-body {
-    background-color: var(--color-fondo);
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Secciones destacadas */
-section {
-    background-color: var(--color-secciones);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Títulos principales */
-h1 {
-    color: var(--color-texto);
-    font-family: englebert-regular;
-}
-
-/* Párrafos */
-p {
-    color: var(--color-texto-secundario);
-    font-size: 1.1rem;
 }
 
 /* Botón de acción rápida */
@@ -91,7 +57,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #6c4f3d; /* Marrón cálido */
+    background-color: #7A4415  ; /* Marrón cálido */
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
@@ -130,7 +96,12 @@ nav {
 @media (max-width: 991px) {
     .logo-responsive {
         position: absolute;
-        bottom: -40px; 
+        top: 20%;
+        bottom: 10px; /* Ajusta la posición para que no salga del navbar */
+        left: 80%; /* Centrar el logo */
+        border-radius: 50%;
+        width: 70px; /* Tamaño adecuado para responsive */
+        height: auto;
     }
 
     .navbar-toggler {
@@ -141,6 +112,7 @@ nav {
         background-color: rgba(95, 48, 17, 0.507); /* Marrón traslúcido */
     }
 }
+
 /* 🔹 SIDEBAR (Menú lateral) */
 .sidebar {
     position: fixed;
@@ -148,7 +120,7 @@ nav {
     left: -250px; /* Oculto por defecto */
     width: 250px;
     height: 100%;
-    background-color: #6c4f3d;
+    background-color: #7A4415  ;
     padding-top: 60px;
     transition: 0.3s;
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
@@ -175,7 +147,7 @@ nav {
 }
 
 .sidebar-nav a:hover {
-    background-color: #8B5A2B;
+    background-color: #7A4415  ;
 }
 
 /* 🔹 Botón Cerrar */
@@ -226,12 +198,12 @@ nav {
     left: 50%;
     width: 80%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
+    color: #ffffff ;
     font-size: 3rem;
     font-family: 'Englebert', cursive;
     font-weight: bold;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    background: #d19f5477; /* Fondo semi-transparente */
+    background: #a45e2098; /* Fondo semi-transparente */
     padding: 15px 25px;
     border-radius: 10px;
     text-align: center;
@@ -263,20 +235,61 @@ h2 {
 }
 
 /* 🔹 ALOJAMIENTO */
-.alojamiento .carousel-item {
+/* Ajuste del tamaño del box */
+#alojamientos {
+    background-color: #E4C090 ; /* Color del box */
+    padding: 60px 40px; /* Aumenta el padding para hacerlo más grande */
+    border-radius: 10px;
+    margin: 50px auto; /* Espaciado */
+}
+
+/* Centrar el botón dentro de la columna del texto */
+.AlojamientosTexto {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center; /* Alinea el contenido al centro verticalmente */
+    align-items: center; /* Centra el texto horizontalmente */
+    text-align: center;
 }
 
-.alojamiento .carousel-item img {
-    width: 50%;
-    height: 200px;
+/* Botón "Ver más" */
+.AlojamientosTexto a {
+    background-color: #D6A466 ; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none; /* Elimina el subrayado */
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.alojamiento .carousel-caption {
-    width: 45%;
-    text-align: left;
+/* Efecto hover */
+.AlojamientosTexto a:hover {
+    background-color: #D6A466 ; /* Un tono más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Pequeño efecto de agrandado */
+}
+
+
+/* Ajustar tamaño del carrusel */
+#carouselAlojamientos img {
+    border-radius: 10px;
+    max-height: 350px; /* Ajusta la altura si es necesario */
+    object-fit: cover;
+}
+
+/* Responsivo: en móvil, el texto y el botón deben quedar bien alineados */
+@media (max-width: 768px) {
+    .AlojamientosTexto {
+        align-items: center; /* Centra todo en móviles */
+        text-align: center;
+    }
+
+    .AlojamientosTexto a {
+        display: block;
+        margin: 20px auto;
+    }
 }
 
 

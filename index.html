@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complejo La Yema</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Nuevas fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Englebert&display=swap"
+        rel="stylesheet">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header con Navbar -->
+    <header>
+        <!-- 🔹 Navegación Original (Solo para PC) -->
+        <nav class="d-none d-lg-block">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#alojamientos">Alojamientos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="logo">
+                <img src="./assets/img/logo.jpg" alt="logo" class="logo-img">
+            </div>
+        </nav>
+
+
+        <!-- 🔹 Navbar Responsive con Menú Lateral -->
+        <nav class="navbar navbar-dark d-block d-lg-none">
+            <div class="container-fluid d-flex justify-content-between">
+                <!-- 🔹 Botón hamburguesa -->
+                <button class="navbar-toggler order-1" type="button" id="menu-btn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- 🔹 Logo a la derecha -->
+                <a class="navbar-brand order-2" href="index.html">
+                    <img src="./assets/img/logo.jpg" alt="logo" class="logo-responsive">
+                </a>
+            </div>
+        </nav>
+
+        <!-- 🔹 Menú lateral (se muestra con el botón hamburguesa) -->
+        <div id="sidebar" class="sidebar">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <ul class="sidebar-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#alojamientos">Alojamientos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        </div>
+        </nav>
+    </header>
+
+    <section class="fondo">
+        <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <!-- Indicadores (los puntitos debajo) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Contenedor de las imágenes -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/complejo.jpg" class="d-block w-100" alt="complejo">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/pileta.jpg" class="d-block w-100" alt="pileta">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/servicios.jpg" class="d-block w-100" alt="servicios">
+                </div>
+            </div>
+
+            <!-- Botones de navegación (flechas) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <div class="tituloInicio">
+            <h1>Complejo La Yema</h1>
+        </div>
+
+    </section>
+
+    <h2>¿Quieres conocer dónde vas a hospedarte?</h2>
+
+    <!-- Sección 1: Alojamientos -->
+    <section id="alojamientos" class="seccion">
+        <div id="carouselAlojamientos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/loft.png" class="d-block w-100" alt="Loft">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>loft</h5>
+                        <p>Comodos y únicos, nuestros loft cuentan con la comodidad que estas buscando, equipados con
+                            cama matrimonial, ropa blanca, baño privado. Todas nuestras habitaciones cuentan con aire
+                            acondicionado frio / calor, cochera cubierta, pava eléctrica, microondas, heladera, vajilla
+                            y tv. Por cable. ¡un espacio perfecto para descansar!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/sorelle.png" class="d-block w-100" alt="Habitaciones">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Habitaciones Sorelle</h5>
+                        <p>Elegantes y amplias, ubicadas frente a nuestro complejo, nuestras habitaciones se destacan
+                            por su espacio único, equipados con una cama matrimonial y una cama simple para un huésped
+                            adicional, ropa blanca, baño privado y agua caliente. Todas nuestras habitaciones cuentan
+                            con aire acondicionado frio / calor, cochera cubierta, frigobar, pava eléctrica, vajilla y
+                            tv. Por cable. ¡una comodidad única!</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/cabaña.png" class="d-block w-100" alt="Cabañas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cabañas</h5>
+                        <p>Cómodas y acogedoras, nuestras cabañas son ideales para una experiencia única. Equipadas con
+                            una habitación con cama matrimonial y una cama simple adicional para un tercer huésped, ropa
+                            blanca, baño privado . Todas nuestras cabañas cuentan con aire acondicionado frio / calor,
+                            cochera cubierta y su propio asador, además cocina con horno, heladera, vajilla y tv. Por
+                            cable. ¡Ideal para sentirte como en casa!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/departamento.png" class="d-block w-100" alt="Departamentos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Departamentos</h5>
+                        <p>Únicos y modernos, nuestros departamentos son la comodidad que estabas buscando, cuentan con
+                            una habitación con cama matrimonial y cama cucheta, un sofá cama en el área de comedor para
+                            un huésped extra, ropa blanca, baño privado. Todos nuestros departamentos están equipados
+                            con aire acondicionado frio / calor, cochera cubierta, cocina con horno, heladera, vajilla y
+                            tv. Por cable. ¡un espacio que encaja a la perfección!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlojamientos"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAlojamientos"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <a href="alojamientos.html" class="btn btn-primary mt-3">Ver más</a>
+    </section>
+
+    <!-- Sección 2: Servicios -->
+    <section id="servicios" class="seccion">
+        <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/servicio1.jpg" class="d-block w-100" alt="Servicio 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicio 1</h5>
+                        <p>Descripción del servicio 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/servicio2.jpg" class="d-block w-100" alt="Servicio 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicio 2</h5>
+                        <p>Descripción del servicio 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/servicio3.jpg" class="d-block w-100" alt="Servicio 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicio 3</h5>
+                        <p>Descripción del servicio 3.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <a href="servicios.html" class="btn btn-primary mt-3">Ver más</a>
+    </section>
+
+    <!-- Sección 3: Nosotros -->
+    <section id="nosotros" class="seccion">
+        <div id="carouselNosotros" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/nosotros1.jpg" class="d-block w-100" alt="Nosotros 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nosotros 1</h5>
+                        <p>Descripción de nosotros 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/nosotros2.jpg" class="d-block w-100" alt="Nosotros 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nosotros 2</h5>
+                        <p>Descripción de nosotros 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/nosotros3.jpg" class="d-block w-100" alt="Nosotros 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nosotros 3</h5>
+                        <p>Descripción de nosotros 3.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNosotros" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNosotros" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <a href="nosotros.html" class="btn btn-primary mt-3">Ver más</a>
+    </section>
+
+    <!-- Sección 4: Contacto -->
+    <section id="contacto" class="seccion">
+        <div id="carouselContacto" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/contacto1.jpg" class="d-block w-100" alt="Contacto 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Contacto 1</h5>
+                        <p>Descripción de contacto 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/contacto2.jpg" class="d-block w-100" alt="Contacto 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Contacto 2</h5>
+                        <p>Descripción de contacto 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/contacto3.jpg" class="d-block w-100" alt="Contacto 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Contacto 3</h5>
+                        <p>Descripción de contacto 3.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselContacto" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselContacto" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección 5: Ubicación -->
+    <section id="ubicacion" class="seccion">
+        <div id="carouselUbicacion" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/ubicacion1.jpg" class="d-block w-100" alt="Ubicación 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ubicación 1</h5>
+                        <p>Descripción de la ubicación 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ubicacion2.jpg" class="d-block w-100" alt="Ubicación 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ubicación 2</h5>
+                        <p>Descripción de la ubicación 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ubicacion3.jpg" class="d-block w-100" alt="Ubicación 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ubicación 3</h5>
+                        <p>Descripción de la ubicación 3.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselUbicacion"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselUbicacion"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/javascript.js"></script>
+</body>
+
+</html>

@@ -235,7 +235,7 @@ h2 {
 }
 
 /* 🔹 ALOJAMIENTO */
-/* Ajuste del tamaño del box */
+
 #alojamientos {
     background-color: #E4C090 ; /* Color del box */
     padding: 60px 40px; /* Aumenta el padding para hacerlo más grande */
@@ -292,5 +292,308 @@ h2 {
     }
 }
 
+/* 🔹 SERVICIOS */
+#servicios {
+    background-color: #E4C090; /* Color del box */
+    padding: 60px 40px; /* Aumenta el padding para hacerlo más grande */
+    border-radius: 10px;
+    margin: 50px auto; /* Espaciado */
+}
+
+/* Centrar el contenido de texto */
+.servicios-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+}
+
+/* Botón "Ver más" */
+.servicios-texto button {
+    background-color: #D6A466; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none; /* Elimina el subrayado */
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover */
+.servicios-texto a:hover {
+    background-color: #D6A466; /* Un tono más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Pequeño efecto de agrandado */
+}
+
+/* Ajustar tamaño del carrusel */
+#carouselServicios img {
+    border-radius: 10px;
+    max-height: 350px; /* Ajusta la altura */
+    object-fit: cover;
+}
+
+/* 🔹 MODAL ESTILOS */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro traslúcido */
+}
+
+.modal-content {
+    background-color: #E4C090; /* Color de fondo del contenido */
+    margin: 15% auto; /* Centrado vertical y horizontal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 🔹 RESPONSIVE: Ajustar en pantallas pequeñas */
+@media (max-width: 768px) {
+    .servicios-texto {
+        align-items: center; /* Centra en móviles */
+        text-align: center;
+    }
+
+    .servicios-texto a {
+        display: block;
+        margin: 20px auto;
+    }
+}
 
 
+
+/* 🔹 SECCIÓN NOSOTROS */
+#sobre-nosotros {
+    background-color: #E4C090;
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 90%;
+}
+
+/* 🔹 Contenedor de texto e imagen */
+.nosotros-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 🔹 Texto a la izquierda */
+.nosotros-texto {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+/* 🔹 Botón "Ver más" */
+.nosotros-texto .btn-ver-mas {
+    background-color: #D6A466;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+    margin-left: 35%;
+}
+
+.nosotros-texto .btn-ver-mas:hover {
+    background-color: #B88550;
+    transform: scale(1.05);
+}
+
+/* 🔹 Imagen a la derecha */
+.nosotros-img {
+    width: 50%;
+    border-radius: 10px;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* 📱 RESPONSIVE: En móvil, imagen abajo y texto arriba */
+@media (max-width: 991px) {
+    .nosotros-contenido {
+        flex-direction: column; /* Apilado en móviles */
+        text-align: center;
+    }
+
+    .nosotros-texto {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .nosotros-texto .btn-ver-mas {
+        align-self: center; /* Centra el botón en móviles */
+        margin-left: 0;
+    }
+
+    .nosotros-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* 🔹 UBICACIÓN */
+#ubicacion {
+    background-color: #E4C090; /* Color del box */
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+/* 🔹 Estilo del Texto */
+.ubicacion-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo el contenido dentro del bloque */
+    text-align: center;
+}
+
+.ubicacion-texto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5B3A29;
+}
+
+.ubicacion-texto p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #5B3A29;
+}
+
+/* 🔹 Estilo del Mapa */
+#ubicacion iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .ubicacion-texto {
+        text-align: center;
+    }
+    
+    #ubicacion .row {
+        flex-direction: column-reverse;
+    }
+}
+
+/* 🔹 CONTACTO */
+#contacto {
+    background-color: #E4C090;
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+/* 🔹 Texto del Contacto */
+.contacto-texto {
+    text-align: center;
+}
+
+.contacto-texto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5B3A29;
+}
+
+.contacto-texto p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #5B3A29;
+}
+
+/* 🔹 Formulario */
+#contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contacto-form input,
+#contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto-form textarea {
+    height: 100px;
+}
+
+/* Botón Enviar */
+.btn-enviar {
+    background-color: #D6A466;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #C58D50;
+    transform: scale(1.05);
+}
+
+/* 🔹 Video */
+.video-contacto {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #contacto .row {
+        flex-direction: column-reverse;
+    }
+
+    .contacto-texto {
+        text-align: center;
+    }
+
+    .video-contacto {
+        width: 100%;
+        height: auto;
+    }
+}
